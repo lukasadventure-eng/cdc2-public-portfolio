@@ -1,0 +1,11 @@
+graph TD
+    A[Início do Ciclo] --> B[Leitura de Status]
+    B --> C{Verificar Prioridades}
+    C --> D[Alternância Inteligente]
+    D --> E[Foco no Projeto prioritário]
+    E --> F[Execução de Tarefas]
+    F --> G[Atualização de Memória]
+    G --> H{Mais Tarefas?}
+    H -->|Sim| C
+    H -->|Não| I[Salvar Estado]
+    I --> J[Próximo Ciclo]

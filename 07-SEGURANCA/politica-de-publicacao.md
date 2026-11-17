@@ -6,7 +6,7 @@ Este repositório (**cdc2-public-portfolio**) tem o propósito único de documen
 
 Para garantir a integridade da operação do CDC 2.0 e proteger informações sensíveis, esta política é rigorosamente aplicada:
 
-- **Proibição de Segredos:** É estritamente proibida a inclusão de chaves de API, tokens, senhas, credenciais, arquivos `.env` ou qualquer dado de acesso.
+- **Proibição de Segredos:** É estritamente proibida a inclusão de chaves de acesso, credenciais, arquivos `.env` ou qualquer dado de autenticação.
 - **Isolamento de Código:** Não é permitido publicar o código-fonte operacional proprietário. A documentação deve se concentrar em visões arquiteturais, fluxos e tecnologias, não na implementação detalhada.
 - **Proteção de Dados:** Dados pessoais, logs brutos, conversas privadas, identificadores de sessão e configurações de rede privada não devem ser publicados.
 - **Ambiente Separado:** Todo material deste portfólio deve ser preparado em um diretório/repositório independente.
