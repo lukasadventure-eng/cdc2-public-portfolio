@@ -1,29 +1,29 @@
 # Voz (Voice Gateway 3.0)
 
 > **Status:** Ativo
-> **Objetivo:** Estúdio de síntese de voz (Voice Gateway 3.0)
+> **Objetivo:** Voice Gateway — fala→texto local (Whisper), TTS, push-to-talk
 
 ---
 
 ## 1. Identidade
-Voice Gateway 3.0 é um sistema de captura de áudio via WASAPI com VAD adaptativo e síntese de voz multiagente, permitindo comunicação natural entre o CDC e seus agentes.
+Voice Gateway 3.0 é um sistema de captura de áudio e transcrição de fala para texto local com Whisper, síntese de voz (TTS) e push-to-talk, permitindo comunicação natural entre o CDC e seus agentes.
 
 ## 2. Problema
-A necessidade de integração de áudio de alta qualidade para comunicação com agentes de IA: captura de voz, detecção de fala e síntese natural.
+A necessidade de integração de áudio de alta qualidade para comunicação com agentes de IA: captura de voz, transcrição local (Whisper) e síntese natural.
 
 ## 3. Visão Arquitetural
-- **Pipeline WASAPI:** Captura de dados de áudio no Windows.
-- **VAD Adaptativo:** Detecção inteligente de voz com ajuste de limiar.
-- **Síntese Multiagente:** TTS com vozes personalizadas por agente.
+- **Pipeline Whisper:** Transcrição local de fala para texto.
+- **Push-to-talk:** Ativação de captura via botão.
+- **TTS Multiagente:** Síntese de voz com adaptadores.
 
 ## 4. Tecnologias
+- Whisper (transcrição local)
 - WASAPI (captura de áudio)
 - `soundcard` (biblioteca Python)
 - Web Speech API (browser TTS)
 - VAD adaptativo (análise de ruído)
 
 ## 5. Implementação e Evidências
-- **Síntese de voz e adaptadores configurados.**
 - **89 testes automatizados executados com sucesso.**
 - **HANDOFF.md:** Documentação técnica completa com resultados.
 - **Provedores suportados:** Browser (padrão), Local (opcional).
