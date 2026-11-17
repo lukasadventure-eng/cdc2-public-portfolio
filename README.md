@@ -149,8 +149,8 @@ Ver [Política de Publicação](./07-SEGURANCA/politica-de-publicacao.md) para d
 | Item | Status |
 |------|--------|
 | Repositório local | ✅ Preparado |
-| Repositório GitHub | ⏳ Aguardando publicação |
-| URL pública | ⏳ Pendente |
+| Repositório GitHub | ✅ Publicado |
+| URL pública | https://github.com/lukasadventure-eng/cdc2-public-portfolio |
 
 ---
 
