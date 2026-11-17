@@ -20,7 +20,7 @@ Este documento define como as evidências no portfólio são classificadas.
 2.  **PROJETOS.md** – Registro de sessões, objetivos, checkpoints.
 3.  **TESTES:** Resultados de execução (PASS/FAIL), sem conexões.
 4.  **ESPECIFICAÇÕES:** Documentos de design e roadmap.
-5.  **SCHEMA:** Estrutura de bancos (sem dados).
+5.  **[Decisões tomadas](./01-SOBRE/decisoes.md)** — 5 itens, 3 linhas cada, honesto sobre o que os agentes implementaram.
 6.  **RESUMOS:** Trechos de HANDOFF e PROJETOS com dados verificáveis.
 
 ## Evidências NÃO Admissíveis

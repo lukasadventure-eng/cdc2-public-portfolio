@@ -1,0 +1,6 @@
+faster-whisper
+soundcard
+numpy
+fastapi
+uvicorn
+python-dotenv

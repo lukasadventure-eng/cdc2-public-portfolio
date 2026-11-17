@@ -1,12 +1,16 @@
 # CDC 2.0 — Portfólio Técnico Público
 
-> **CDC 2.0** é um ecossistema de coordenação cognitiva e orquestração multiagente, idealizado e arquitetado de forma independente. Este repositório é o **portfólio técnico público** que documenta a concepção, a arquitetura e a evolução do CDC 2.0 e dos seis projetos integrantes, servindo como referência vinculável a currículo e LinkedIn.
+**O que é:** Ecossistema de automação com IA e orquestração de agentes (multiagente, memória persistente, voz local).  
+**Resultado medido:** 89 testes automatizados PASS (Voice Gateway); 39 skills catalogadas (Matt Pocock); 35 oportunidades mapeadas (Cash Hunter).  
+**Demo:** [Voice Gateway em ação](./showcase/voice-gateway/) — fala→texto local com Whisper, push-to-talk.
+
+> **Diferencial:** Formação em eletromecânica + IA. Combino automação industrial com orquestração de agentes.
 
 ---
 
 ## 1. Sobre o Idealizador e Arquiteto
 
-**Cargo pretendido:** *Arquiteto de Sistemas de IA | Idealizador do CDC 2.0 | Arquitetura Multiagente | Automação Inteligente*
+**Cargo pretendido:** *Automação com IA e Orquestração de Agentes* | *Voice Gateway (Whisper/TTS)*
 
 O proprietário atua como **idealizador, arquiteto e responsável pela direção tecnológica** do ecossistema CDC 2.0. Sua contribuição consiste em:
 
@@ -57,8 +61,8 @@ Proprietário (Idealizador/Arquiteto)
 | 2 | [Riqueza e Prosperidade](./04-PORTFOLIO/riqueza-e-prosperidade.md) | Ativo | Educação financeira interativa com gamificação |
 | 3 | [Cash Hunter](./04-PORTFOLIO/cash-hunter.md) | Ativo | Radar de oportunidades e grants financeiros |
 | 4 | [Matt Pocock](./04-PORTFOLIO/matt-pocock.md) | Concluído | Catálogo interativo de skills TypeScript/React |
-| 5 | [Voz](./04-PORTFOLIO/voz.md) | Ativo | Estúdio de síntese de voz com captura WASAPI |
-| 6 | [VIRADA 3D STUDIO](./04-PORTFOLIO/virada-3d-studio.md) | Ativo | Experiência 3D interativa e modelagem arquitetônica |
+| 5 | [Voz](./04-PORTFOLIO/voz.md) | Ativo | Voice Gateway — fala→texto local (Whisper), TTS, push-to-talk |
+| 6 | [VIRADA 3D STUDIO](./04-PORTFOLIO/virada-3d-studio.md) | Ativo | Jogo 3D de educação financeira (Godot, pt-BR) |
 
 ---
 

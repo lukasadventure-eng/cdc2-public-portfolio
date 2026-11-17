@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0d14">
+  <title>Voice Gateway — CDC & Salomão AI</title>
+  <link rel="stylesheet" href="/app/styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <div>
+          <h1>Voice Gateway</h1>
+          <p>CDC &amp; Salomão AI — conversa em tempo real</p>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <span id="conn" class="pill conn conn-off"><i></i> desconectado</span>
+        <span id="stateLabel" class="pill">ocioso</span>
+        <button id="settingsBtn" class="icon-btn" title="Configurações" aria-label="Configurações">⚙</button>
+      </div>
+    </header>
+
+    <nav class="agents" id="agents" aria-label="Seleção de agente"></nav>
+
+    <section class="statusbar" aria-label="Estado do sistema">
+      <span id="stAgente">agente: —</span>
+      <span id="stCaptura">captura: —</span>
+      <span id="stNivel">nível: —</span>
+      <span id="stSTT">STT: —</span>
+      <span id="stTTS">TTS: —</span>
+    </section>
+
+    <main class="chat" id="chat">
+      <div class="empty" id="empty">
+        <div class="orb">◉</div>
+        <h2>Pronto para conversar</h2>
+        <p>Selecione um agente e fale. Você pode interromper a resposta a qualquer momento.</p>
+      </div>
+    </main>
+
+    <div class="interim" id="interim" hidden></div>
+
+    <footer class="composer">
+      <button id="mic" class="mic" aria-label="Microfone">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+      </button>
+      <canvas id="meter" class="meter" width="160" height="26" aria-hidden="true"></canvas>
+      <input id="text" type="text" placeholder="Ou digite sua mensagem…" autocomplete="off" />
+      <button id="send" class="send" aria-label="Enviar">➤</button>
+      <button id="stop" class="stop" hidden aria-label="Parar fala">⏹</button>
+    </footer>
+
+    <div class="toast" id="toast" hidden></div>
+
+    <aside class="drawer" id="drawer" hidden>
+      <div class="drawer-head">
+        <h2>Configurações</h2>
+        <button id="closeDrawer" class="icon-btn" aria-label="Fechar">✕</button>
+      </div>
+      <div class="drawer-body">
+        <div class="field">
+          <label>Token de acesso</label>
+          <input id="token" type="password" />
+          <button id="saveToken" class="btn">Salvar e reconectar</button>
+        </div>
+        <div class="field">
+          <label>Microfone (navegador)</label>
+          <select id="inDevice"></select>
+          <p class="readout" id="micPerm"></p>
+          <button id="micPermRetry" class="btn">Tentar novamente</button>
+        </div>
+        <div class="field">
+          <label>Saída de áudio</label>
+          <select id="outDevice"></select>
+        </div>
+        <div class="field">
+          <label>Captura de áudio</label>
+          <select id="capturaModo">
+            <option value="navegador">Microfone do navegador</option>
+            <option value="servidor">Microfone do servidor (Windows)</option>
+          </select>
+          <select id="capturaDisp"><option value="">Dispositivo padrão</option></select>
+          <p class="readout" id="capturaInfo">Se o navegador negar o microfone, use a captura pelo servidor.</p>
+          <button id="testMicBtn" class="btn" style="margin-top: 4px;">Testar microfone</button>
+        </div>
+        <div class="field">
+          <label>Modo de escuta</label>
+          <button id="modeBtn" class="btn">Modo: push-to-talk</button>
+          <button id="vadBtn" class="btn on">VAD ativo</button>
+        </div>
+        <div class="field">
+          <label>Velocidade da fala</label>
+          <input id="rate" type="range" min="0.7" max="1.4" step="0.05" value="1.0" />
+          <span id="rateVal">1.0</span>
+        </div>
+        <div class="field">
+          <label>Altura da voz</label>
+          <input id="pitch" type="range" min="0.7" max="1.3" step="0.05" value="1.0" />
+          <span id="pitchVal">1.0</span>
+        </div>
+        <div class="field">
+          <label>Wake word</label>
+          <label class="switch"><input type="checkbox" id="wakeToggle" /><span></span></label>
+          <span id="wakeState" class="pill wake-off">wake desligado</span>
+          <p class="readout" id="wakeInfo"></p>
+        </div>
+        <div class="field">
+          <label>Escuta contínua</label>
+          <label class="switch"><input type="checkbox" id="continuoToggle" /><span></span></label>
+        </div>
+        <div class="field">
+          <label>Notificações</label>
+          <label class="switch"><input type="checkbox" id="notifToggle" checked /><span></span></label>
+        </div>
+        <div class="field">
+          <label>Sessões</label>
+          <div id="sessions" class="list"></div>
+          <button id="clearSession" class="btn">Limpar sessão atual</button>
+        </div>
+        <div class="field">
+          <label>Provedores</label>
+          <pre id="providers"></pre>
+          <p class="readout" id="privacy"></p>
+        </div>
+        <div class="field">
+          <label>Voz (provedor local)</label>
+          <select id="voiceSelect"></select>
+          <input id="vozArquivo" type="file" accept="audio/wav" />
+          <label><input type="checkbox" id="vozConsent" /> Autorizo uso da minha voz</label>
+          <button id="vozRegistrar" class="btn">Registrar voz</button>
+          <p class="readout" id="vozInfo"></p>
+        </div>
+        <div class="field">
+          <label>Falantes (identificação)</label>
+          <input id="novoFalante" placeholder="Nome" />
+          <label><input type="checkbox" id="consentFalante" /> Consentimento</label>
+          <button id="criarFalante" class="btn">Criar perfil</button>
+          <div id="falantes" class="list"></div>
+          <p class="readout" id="falanteInfo"></p>
+        </div>
+      </div>
+    </aside>
+
+    <aside class="ops-panel" id="opsPanel" hidden>
+      <div class="drawer-head">
+        <h2>Operações</h2>
+        <button id="closeOps" class="icon-btn" aria-label="Fechar">✕</button>
+      </div>
+      <div class="ops-body">
+        <div class="task-card empty-task" id="activeTask">Nenhuma tarefa em execução.</div>
+        <div class="ops-actions">
+          <button id="opsConfirm" class="btn" hidden>Confirmar</button>
+          <button id="opsCancel" class="btn btn-cancel" hidden>Cancelar</button>
+        </div>
+        <div class="confirm-banner" id="confirmBanner" hidden>
+          <p>Confirmação necessária. Diga "sim, pode" ou confirme abaixo.</p>
+          <button id="confirmYes" class="btn">Sim, pode</button>
+          <button id="confirmNo" class="btn btn-cancel">Não</button>
+        </div>
+        <div class="event-list" id="eventList"></div>
+        <h3>Histórico</h3>
+        <div id="taskList" class="list"></div>
+      </div>
+    </aside>
+
+    <button id="opsBtn" class="ops-fab" title="Operações" aria-label="Operações">▤</button>
+  </div>
+
+  <script src="/app/app.js"></script>
+</body>
+</html>
