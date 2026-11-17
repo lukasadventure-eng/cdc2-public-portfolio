@@ -21,6 +21,7 @@ Este documento define como as evidências no portfólio são classificadas.
 3.  **TESTES:** Resultados de execução (PASS/FAIL), sem conexões.
 4.  **ESPECIFICAÇÕES:** Documentos de design e roadmap.
 5.  **SCHEMA:** Estrutura de bancos (sem dados).
+6.  **RESUMOS:** Trechos de HANDOFF e PROJETOS com dados verificáveis.
 
 ## Evidências NÃO Admissíveis
 
