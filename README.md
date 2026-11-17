@@ -128,7 +128,7 @@ Este portfólio é **exclusivamente documental e demonstrativo**. Não contém:
 
 - Código-fonte operacional proprietário
 - Bancos SQLite operacionais
-- Tokens, credenciais ou segredos
+- Credenciais ou segredos
 - Arquivos `.env`
 - Logs brutos ou conversas privadas
 

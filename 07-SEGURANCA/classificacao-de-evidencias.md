@@ -10,7 +10,7 @@ Este documento define como as evidências no portfólio são classificadas.
 | Especificação | Pública | `roadmap_multiagente_e3_e8.md` |
 | Testes | Pública (sem dados sensíveis) | `test_e5_memoria.py` |
 | Implementação | NÃO PÚBLICA | Código fonte `.py`, `.js` dos projetos |
-| Conexão | NÃO PÚBLICA | Strings de conexão, tokens |
+| Conexão | NÃO PÚBLICA | Strings de conexão e credenciais |
 | Logs | NÃO PÚBLICA | Logs brutos de execução |
 | Commits | NÃO PÚBLICOS | Histórico completo de commits privados |
 
@@ -27,5 +27,5 @@ Este documento define como as evidências no portfólio são classificadas.
 1.  **Código fonte** dos módulos operacionais.
 2.  **Bancos de dados reais** com dados produtivos.
 3.  **Logs de sessão** com IDs de sessão.
-4.  **Configurações** com tokens ou caminhos.
+4.  **Configurações** com credenciais ou caminhos.
 5.  **Arquivos `.pyc`** ou cache binário.

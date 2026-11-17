@@ -32,7 +32,7 @@ O CDC 2.0 implementa observabilidade através de logs estruturados, métricas de
 
 O status pode ser consultado via interface:
 - Linha de comando: `python dashboard.py`
-- Web server: Interface Flask em `http://localhost:8080/status`
+- Web server: Interface Flask em endpoint local (não divulgado)
 
 ---
 

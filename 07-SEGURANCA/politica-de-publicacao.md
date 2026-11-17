@@ -17,7 +17,7 @@ Para garantir a integridade da operação do CDC 2.0 e proteger informações se
 |---------------|-----------|----------------------|
 | **Documental** | Visão geral, arquitetura, objetivos | Permitido |
 | **Demonstrativo** | Imagens, diagramas, resumos de funcionamento | Permitido (após revisão) |
-| **Operacional** | Código-fonte, bancos SQLite, tokens, logs | **Proibido** |
+| **Operacional** | Código-fonte, bancos SQLite, credenciais, logs | **Proibido** |
 
 ## 3. Procedimento de Revisão
 

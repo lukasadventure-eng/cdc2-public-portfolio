@@ -19,14 +19,14 @@ Esta seção define os limites entre o portfólio público e o CDC 2.0 operacion
 - ❌ Arquivos `.env` ou de configuração sensível
 
 ### Credenciais e Acesso
-- ❌ Tokens de API
+- ❌ Credenciais de API
 - ❌ Chaves de acesso e credenciais
 - ❌ Dados de autenticação
 - ❌ URLs de endpoints privados
 
 ### Informações Pessoais
 - ❌ Endereços de arquivos pessoais
-- ❌ Caminhos de sessão (`ses_*`)
+- ❌ Caminhos de sessão privada
 - ❌ Informações privadas de terceiros
 
 ### Histórico Git
