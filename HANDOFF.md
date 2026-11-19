@@ -33,6 +33,13 @@ Ecossistema de automação com IA e orquestração de agentes (multiagente, mem�
 
 ---
 
+## Status de Publicação
+
+- **Repositório GitHub:** ✅ Publicado
+- **URL pública:** https://github.com/lukasadventure-eng/cdc2-public-portfolio
+- **Último commit:** 1514cac
+- **Branch:** master (up to date com origin/master)
+
 ## Próximos passos
 
 1. Testar showcase em ambiente com dependências instaladas
