@@ -15,7 +15,7 @@
 - **Status:** Funcional, com 39 skills catalogadas e testadas.
 
 ### 4. Voz — Síntese e Captura
-- **Demonstração:** Captura WASAPI + VAD adaptativo + TTS por agente.
+- **Demonstração:** Captura WASAPI + VAD adaptativo + TTS por agente (com GIF demonstrativo `demo.gif` no showcase).
 - **Status:** 89 testes automatizados PASSOU.
 - **Documentação:** HANDOFF.md
 

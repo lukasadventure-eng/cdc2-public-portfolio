@@ -25,6 +25,7 @@ A necessidade de integração de áudio de alta qualidade para comunicação com
 
 ## 5. Implementação e Evidências
 - **89 testes automatizados executados com sucesso.**
+- **Demo Visual:** `demo.gif` incluído no showcase.
 - **HANDOFF.md:** Documentação técnica completa com resultados.
 - **Provedores suportados:** Browser (padrão), Local (opcional).
 
