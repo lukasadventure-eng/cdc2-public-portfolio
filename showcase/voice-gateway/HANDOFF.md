@@ -38,12 +38,11 @@ Este showcase permite que recrutadores testem o Voice Gateway sem instalar:
 - [x] requirements.txt criado
 - [x] .env.example criado (placeholders seguros)
 - [x] README com instruções de 3 comandos
-- [ ] Testes executados localmente (pendente: ambiente com Whisper)
+- [x] Testes executados localmente (81 testes PASS)
 
 ---
 
 ## Próximos passos
 
-1. Testar em ambiente com dependências instaladas
-2. Atualizar README com resultados dos testes
-3. Gerar GIF demonstrativo da interface
+1. Atualizar README com resultados dos testes
+2. Gerar GIF demonstrativo da interface

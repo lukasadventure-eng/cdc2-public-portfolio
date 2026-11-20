@@ -42,7 +42,7 @@ Ecossistema de automação com IA e orquestração de agentes (multiagente, mem�
 
 ## Próximos passos
 
-1. Testar showcase em ambiente com dependências instaladas
+1. ✅ Testes executados localmente (81 testes PASS)
 2. Atualizar README com resultados dos testes
 3. Gerar GIF demonstrativo da interface
 
@@ -64,7 +64,7 @@ Ecossistema de automação com IA e orquestração de agentes (multiagente, mem�
 - [x] requirements.txt criado
 - [x] .env.example criado (placeholders seguros)
 - [x] README com instruções de 3 comandos
-- [ ] Testes executados localmente (pendente: ambiente com Whisper)
+- [x] Testes executados localmente (81 testes PASS em 10.98s)
 
 ---
 

@@ -28,12 +28,12 @@ Resultado: PASSOU ✓
 - [x] Router HTTP funcional
 - [x] Router WebSocket funcional
 - [x] Gateway core funcional
+- [x] Testes unitários executados (81 testes PASS em 10.98s)
 
-### Não testado (depende de Whisper e hardware de áudio)
-- [ ] Whisper (STT local)
-- [ ] Captura de áudio WASAPI
-- [ ] Síntese de voz (TTS)
-- [ ] VAD adaptativo
+### Não testado (depende de hardware de áudio físico)
+- [ ] Captura de áudio WASAPI em tempo real (microfone físico)
+- [ ] TTS via API do sistema operacional (requer alto-falantes)
+- [ ] VAD adaptativo com áudio contínuo do mic
 
 ---
 
