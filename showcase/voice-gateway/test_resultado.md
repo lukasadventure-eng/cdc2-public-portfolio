@@ -28,7 +28,7 @@ Resultado: PASSOU ✓
 - [x] Router HTTP funcional
 - [x] Router WebSocket funcional
 - [x] Gateway core funcional
-- [x] Testes unitários executados (81 testes PASS em 10.98s)
+- [x] Testes unitários executados (89 testes PASS em 10.54s)
 
 ### Não testado (depende de hardware de áudio físico)
 - [ ] Captura de áudio WASAPI em tempo real (microfone físico)
@@ -51,6 +51,6 @@ Resultado: PASSOU ✓
 
 ## Próximos passos
 
-1. Instalar Whisper (`pip install faster-whisper`)
-2. Executar testes de captura de áudio
-3. Gerar GIF demonstrativo da interface
+1. ✅ Testes executados (89 testes PASS)
+2. ✅ GIF demonstrativo gerado (`demo.gif`)
+3. Showcase público concluído e operacional
