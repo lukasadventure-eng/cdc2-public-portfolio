@@ -37,7 +37,7 @@ Ecossistema de automação com IA e orquestração de agentes (multiagente, mem�
 
 - **Repositório GitHub:** ✅ Publicado
 - **URL pública:** https://github.com/lukasadventure-eng/cdc2-public-portfolio
-- **Último commit:** 666a98d
+- **Último commit:** b4e37b1
 - **Branch:** master (up to date com origin/master)
 
 ## Próximos passos
