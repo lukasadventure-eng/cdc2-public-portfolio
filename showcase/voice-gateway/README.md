@@ -5,6 +5,10 @@
 ## O que é
 Gateway de voz que captura áudio via microfone, transcreve localmente com Whisper e responde via TTS. Push-to-talk: pressione o botão, fale, solte para transcrever.
 
+## Demonstração Visual
+
+![Voice Gateway Demo](./demo.gif)
+
 ## Rodar em 3 comandos
 
 ```bash

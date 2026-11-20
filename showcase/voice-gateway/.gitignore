@@ -1,0 +1,9 @@
+# Dados sensíveis e arquivos gerados
+voice_gateway/data/
+*.db
+token
+*.log
+.env
+__pycache__/
+*.pyc
+.pytest_cache/

@@ -44,5 +44,6 @@ Este showcase permite que recrutadores testem o Voice Gateway sem instalar:
 
 ## Próximos passos
 
-1. Atualizar README com resultados dos testes
-2. Gerar GIF demonstrativo da interface
+1. ✅ Atualizar README com resultados dos testes
+2. ✅ Gerar GIF demonstrativo da interface (`demo.gif`)
+3. Showcase 100% concluído e documentado
