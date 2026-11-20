@@ -1,7 +1,7 @@
 # CDC 2.0 — Portfólio Técnico Público
 
 **O que é:** Ecossistema de automação com IA e orquestração de agentes (multiagente, memória persistente, voz local).  
-**Resultado medido:** 81 testes automatizados PASS (Voice Gateway showcase, 10.98s); 39 skills catalogadas (Matt Pocock); 35 oportunidades mapeadas (Cash Hunter).  
+**Resultado medido:** 89 testes automatizados PASS (Voice Gateway showcase, 10.54s); 39 skills catalogadas (Matt Pocock); 35 oportunidades mapeadas (Cash Hunter).  
 **Demo:** [Voice Gateway em ação](./showcase/voice-gateway/) — fala→texto local com Whisper, push-to-talk.
 
 > **Diferencial:** Formação em eletromecânica + IA. Combino automação industrial com orquestração de agentes.
@@ -120,7 +120,7 @@ Proprietário (Idealizador/Arquiteto)
 |-----------|-----------|---------------|
 | CDC 2.0 coordena 6 projetos | [PROJETOS.md](../PROJETOS.md) | Implementação relatada |
 | Memória persistente implementada | [test_e5_memoria.py](../multiagente/multiagente/testes/test_e5_memoria.py) | Teste automatizado |
-| Voice Gateway: 81 testes PASS (10.98s) | [showcase/voice-gateway/test_resultado.md](./showcase/voice-gateway/test_resultado.md) | Teste automatizado |
+| Voice Gateway: 89 testes PASS (10.54s) | [showcase/voice-gateway/test_resultado.md](./showcase/voice-gateway/test_resultado.md) | Teste automatizado |
 | Matt Pocock: 39 skills, 13/13 PASS | [PROJETOS.md](../PROJETOS.md) | Teste registrado |
 | Captura WASAPI operacional | [HANDOFF.md](../HANDOFF.md) | Documentação técnica |
 
