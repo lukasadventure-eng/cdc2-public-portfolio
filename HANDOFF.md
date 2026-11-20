@@ -37,7 +37,7 @@ Ecossistema de automação com IA e orquestração de agentes (multiagente, mem�
 
 - **Repositório GitHub:** ✅ Publicado
 - **URL pública:** https://github.com/lukasadventure-eng/cdc2-public-portfolio
-- **Último commit:** 1514cac
+- **Último commit:** 666a98d
 - **Branch:** master (up to date com origin/master)
 
 ## Próximos passos
@@ -47,6 +47,9 @@ Ecossistema de automação com IA e orquestração de agentes (multiagente, mem�
 3. ✅ GIF demonstrativo gerado (`demo.gif`) e documentado no README do showcase
 4. ✅ Atualizar `04-PORTFOLIO/voz.md` e `05-EVIDENCIAS/demonstracoes.md` com evidência do GIF
 5. ✅ Sincronizar contagem de testes no README principal (81 → 89)
+6. ✅ Atualizar Último commit no Status de Publicação (1514cac → 666a98d)
+7. ✅ Atualizar Estado da documentação (81 → 89 testes)
+8. 🎯 **Portfólio completo — todas as frentes concluídas**
 
 ---
 
@@ -66,7 +69,7 @@ Ecossistema de automação com IA e orquestração de agentes (multiagente, mem�
 - [x] requirements.txt criado
 - [x] .env.example criado (placeholders seguros)
 - [x] README com instruções de 3 comandos
-- [x] Testes executados localmente (81 testes PASS em 10.98s)
+- [x] Testes executados localmente (89 testes PASS em 10.54s)
 
 ---
 
