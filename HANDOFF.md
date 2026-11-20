@@ -42,8 +42,8 @@ Ecossistema de automação com IA e orquestração de agentes (multiagente, mem�
 
 ## Próximos passos
 
-1. ✅ Testes executados localmente (81 testes PASS)
-2. Atualizar README com resultados dos testes
+1. ✅ Testes executados localmente (81 testes PASS em 10.98s)
+2. ✅ README atualizado com resultados dos testes
 3. Gerar GIF demonstrativo da interface
 
 ---
